@@ -4,7 +4,7 @@
  *
  * @package Adsense_Page_Level_Ads
  * @author Pascale Beier <mail@pascalebeier.de>
- * @license MIT
+ * @license GPL2+
  */
 
 defined( 'ABSPATH' ) || die;
@@ -32,6 +32,7 @@ class AdSense_Page_Level_Ads_Admin {
 	 */
 	public function settings() {
 		register_setting( 'adsense_page_level_ads', 'adsense_page_level_ads_publisher' );
+		register_setting( 'adsense_page_level_ads', 'adsense_page_level_ads_display' );
 	}
 
 	/**
@@ -39,6 +40,13 @@ class AdSense_Page_Level_Ads_Admin {
 	 */
 	public function options() {
 		include ADSENSE_PAGE_LEVEL_ADS_PLUGIN_DIR . 'views/options.php';
+	}
+
+	/**
+	 * Set default options.
+	 */
+	public function activate() {
+		update_option( 'adsense_page_level_ads_display', array() );
 	}
 
 	/**
