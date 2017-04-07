@@ -22,7 +22,7 @@ Easily integrate AdSense Page Level Ads into your WordPress Site. Just enter you
 == Frequently Asked Questions ==
 = Where do I find my Publisher ID? =
 
-In the AdSense URL and any AdSense Code Block.
+See https://support.google.com/adsense/answer/105516?hl=en
 
 == Screenshots ==
 1. Super simple Settings.
