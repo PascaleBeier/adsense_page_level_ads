@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || die;
 ?>
 
 <div class="wrap">
-	<h1><?php esc_html_e( 'AdSense Page Level Ads Settings', 'adsense_page_level_ads' ); ?></h1>
+	<h1><?php esc_html_e( 'AdSense Page Level Ads Settings', 'page-level-ads-adsense' ); ?></h1>
 
 	<form method="post" action="options.php">
 		<?php settings_fields( 'adsense_page_level_ads' ); ?>
@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) || die;
 					<p class="description"
 					   id="publisher-description">
 						<?php
-						esc_html_e( 'Your AdSense Publisher ID. This is a large number.', 'adsense_page_level_ads' );
+						esc_html_e( 'Your AdSense Publisher ID. This is a large number.', 'page-level-ads-adsense' );
 						?></p>
 				</td>
 			</tr>
@@ -34,7 +34,7 @@ defined( 'ABSPATH' ) || die;
 					<fieldset>
 						<legend class="screen-reader-text">
 							<span><?php esc_html_e('Display AdSense Page Level Ads on selected post types above.',
-							'adsense_page_level_ads'); ?></span></legend>
+							'page-level-ads-adsense'); ?></span></legend>
 
 						<?php foreach ( get_post_types( array(
 							'public' => true,
@@ -53,7 +53,7 @@ defined( 'ABSPATH' ) || die;
 						<?php } ?>
 
 						<p class="description"><?php esc_html_e('Display AdSense Page Level Ads on selected post types above.',
-						'adsense_page_level_ads'); ?></p>
+						'page-level-ads-adsense'); ?></p>
 					</fieldset>
 				</td>
 			</tr>

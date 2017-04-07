@@ -2,9 +2,9 @@
 Contributors: PascaleBeier
 Tags: adsense, page level, ads
 Donate link: https://www.paypal.me/PascaleBeier
-Requires at least: 4.5.0
+Requires at least: 4.6.0
 Tested up to: 4.7.3
-Stable tag: 0.1.1
+Stable tag: 1.0.0
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -28,9 +28,17 @@ In the AdSense URL and any AdSense Code Block.
 1. Super simple Settings.
 
 == Changelog ==
+
+= 1.0.0 =
+
+Feature: i18n support
+Feature: Updated README
+Changed: Requires at least: 4.5 => 4.6
+Fixed: Textdomain
+
 = 0.1.1 =
 
-Fix Casing Issue
+Fixed: Casing Issue
 
 = 0.1.0 =
 

@@ -9,10 +9,10 @@
 
 /*
 Plugin Name:  AdSense Page Level Ads
-Plugin URI:   https://pascalebeier.de/wordpress/plugins/adsense-page-level-ads
+Plugin URI:   https://wordpress.org/plugins/page-level-ads-adsense/
 Description:  AdSense Page Level Ads for WordPress done right.
-Text Domain:  adsense_page_level_ads
-Version:      0.1.1
+Text Domain:  page-level-ads-adsense
+Version:      1.0.0
 Author:       Pascale Beier
 Author URI:   https://pascalebeier.de/
 License:      GPL2+
