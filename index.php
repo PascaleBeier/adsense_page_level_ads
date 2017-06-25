@@ -24,7 +24,7 @@ if ( ! defined( 'ADSENSE_PAGE_LEVEL_ADS_PLUGIN_DIR' ) ) {
 	define( 'ADSENSE_PAGE_LEVEL_ADS_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 }
 
-require_once ADSENSE_PAGE_LEVEL_ADS_PLUGIN_DIR . 'src/class-adsense-page-Level-ads-admin.php';
+require_once ADSENSE_PAGE_LEVEL_ADS_PLUGIN_DIR . 'src/class-adsense-page-level-ads-admin.php';
 require_once ADSENSE_PAGE_LEVEL_ADS_PLUGIN_DIR . 'src/class-adsense-page-level-ads-scripts.php';
 
 register_activation_hook( __FILE__, array( 'AdSense_Page_Level_Ads_Admin', 'activate' ) );
