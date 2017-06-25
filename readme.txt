@@ -3,8 +3,8 @@ Contributors: PascaleBeier
 Tags: adsense, page level, ads
 Donate link: https://www.paypal.me/PascaleBeier
 Requires at least: 4.6.0
-Tested up to: 4.7.3
-Stable tag: 1.0.0
+Tested up to: 4.8.0
+Stable tag: 1.0.1
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -28,6 +28,10 @@ See https://support.google.com/adsense/answer/105516?hl=en
 1. Super simple Settings.
 
 == Changelog ==
+
+= 1.0.1 =
+
+Fixed: Uppercase in include path which lead to the plugin not being able to be activated
 
 = 1.0.0 =
 

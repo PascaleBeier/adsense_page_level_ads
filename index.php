@@ -12,7 +12,7 @@ Plugin Name:  AdSense Page Level Ads
 Plugin URI:   https://wordpress.org/plugins/page-level-ads-adsense/
 Description:  AdSense Page Level Ads for WordPress done right.
 Text Domain:  page-level-ads-adsense
-Version:      1.0.0
+Version:      1.0.1
 Author:       Pascale Beier
 Author URI:   https://pascalebeier.de/
 License:      GPL2+
