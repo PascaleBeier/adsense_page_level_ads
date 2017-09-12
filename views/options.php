@@ -53,7 +53,9 @@ defined( 'ABSPATH' ) || die;
 						<?php } ?>
 
 						<p class="description"><?php esc_html_e('Display AdSense Page Level Ads on selected post types above.',
-						'page-level-ads-adsense'); ?></p>
+						'page-level-ads-adsense'); ?>
+                        <?php esc_html_e( 'You can disable Page Level Ads on a certain post through adding the HTML comment <!-- No Page Level Ads -->.', 'page-level-ads-adsense')?>
+                        </p>
 					</fieldset>
 				</td>
 			</tr>

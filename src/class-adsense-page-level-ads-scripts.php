@@ -29,7 +29,7 @@ class AdSense_Page_Level_Ads_Scripts {
 	 */
 	public function inline_configuration() {
 		$data = '(adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-' .
-				get_option( 'adsense_page_level_ads_publisher' ) . '", enable_page_level_ads: true });';
+		        get_option( 'adsense_page_level_ads_publisher' ) . '", enable_page_level_ads: true });';
 
 		wp_add_inline_script( 'adsense_page_level_ads_adsense', $data );
 	}
@@ -54,11 +54,11 @@ class AdSense_Page_Level_Ads_Scripts {
 	 * Run our hooks.
 	 */
 	public function init() {
-	    if ( ! is_admin() && in_array( get_post_type( get_queried_object_id() ), get_option( 'adsense_page_level_ads_display' ), true ) ) {
+		if ( ! is_admin() && in_array( get_post_type( get_queried_object_id() ), get_option( 'adsense_page_level_ads_display' ), true )
+		     && strpos( get_post_field( 'post_content', get_queried_object_id() ), '<!-- No Page Level Ads -->' ) === false ) {
 			add_action( 'wp_enqueue_scripts', array( 'AdSense_Page_Level_Ads_Scripts', 'enqueue_script' ) );
 			add_action( 'wp_enqueue_scripts', array( 'AdSense_Page_Level_Ads_Scripts', 'inline_configuration' ) );
 			add_filter( 'script_loader_tag', array( 'AdSense_Page_Level_Ads_Scripts', 'add_async_defer' ), 10, 2 );
 		}
 	}
-
 }
