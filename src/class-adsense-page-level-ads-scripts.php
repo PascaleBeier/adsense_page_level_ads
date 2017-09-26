@@ -55,7 +55,7 @@ class AdSense_Page_Level_Ads_Scripts {
 	 */
 	public function init() {
 		if ( ! is_admin() && in_array( get_post_type( get_queried_object_id() ), get_option( 'adsense_page_level_ads_display' ), true )
-		     && strpos( get_post_field( 'post_content', get_queried_object_id() ), '<!-- No Page Level Ads -->' ) === false ) {
+		     && strpos( get_post_field( 'post_content', get_queried_object_id() ), '<!--NoPageLevelAds-->' ) === false ) {
 			add_action( 'wp_enqueue_scripts', array( 'AdSense_Page_Level_Ads_Scripts', 'enqueue_script' ) );
 			add_action( 'wp_enqueue_scripts', array( 'AdSense_Page_Level_Ads_Scripts', 'inline_configuration' ) );
 			add_filter( 'script_loader_tag', array( 'AdSense_Page_Level_Ads_Scripts', 'add_async_defer' ), 10, 2 );

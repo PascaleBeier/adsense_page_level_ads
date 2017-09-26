@@ -3,8 +3,8 @@ Contributors: PascaleBeier
 Tags: adsense, page level, ads
 Donate link: https://www.paypal.me/PascaleBeier
 Requires at least: 4.6.0
-Tested up to: 4.8.0
-Stable tag: 1.1.0
+Tested up to: 4.8.2
+Stable tag: 1.1.1
 License: GPL2+
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -20,6 +20,11 @@ Easily integrate AdSense Page Level Ads into your WordPress Site. Just enter you
 
 
 == Frequently Asked Questions ==
+
+= How do I disable Page Level Ads on certain Pages / Posts?
+
+Insert the HTML comment <!--NoPageLevelAds-->.
+
 = Where do I find my Publisher ID? =
 
 See https://support.google.com/adsense/answer/105516?hl=en
@@ -28,6 +33,11 @@ See https://support.google.com/adsense/answer/105516?hl=en
 1. Super simple Settings.
 
 == Changelog ==
+
+= 1.1.1 =
+
+Changed: Renamed comment to disable Page Level Ads to <!--NoPageLevelAds-->
+Changed: Bumped WordPress Version to 4.8.2
 
 = 1.1.0 =
 
